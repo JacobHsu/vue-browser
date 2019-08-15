@@ -12,6 +12,29 @@ vue CLI v3.6.2
 `$ cd vue-browser`  
 `$ yarn serve`  
 
+### gh-pages
+
+[![NPM](https://nodei.co/npm/gh-pages.png?downloads=true&stars=true)](https://nodei.co/npm/gh-pages/)  
+> Publish files to a gh-pages branch on GitHub (or any other branch anywhere else).
+
+`$ npm install gh-pages --save-dev` 
+
+
+vue.config.js
+```js
+module.exports = {
+    publicPath: 'vue-browser'   
+}
+```
+
+package.json
+```js
+"deploy": "npm run build && gh-pages -d dist"
+```
+
+
+`$ npm run deploy`
+
 ## Project setup
 ```
 yarn install
